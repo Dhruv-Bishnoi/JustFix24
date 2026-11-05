@@ -6,7 +6,7 @@ import {
   LocateFixed, LoaderCircle
 } from "lucide-react";
 
-const API_URL = "http://localhost:5000/api/providers";
+const API_URL = "https://justfix24.onrender.com";
 
 const categories = [
   { name: "Electrician", icon: Zap, color: "bg-amber-100 text-amber-600" },
@@ -321,7 +321,7 @@ function App() {
               <div className="rounded-2xl border border-red-200 bg-white px-5 py-12 text-center">
                 <h3 className="text-xl font-bold text-red-600">Could not load providers</h3>
                 <p className="mt-2 text-sm text-slate-500">{apiError}</p>
-                <p className="mt-2 text-xs text-slate-400">Check that your backend is running at localhost:5000.</p>
+                <p className="mt-2 text-xs text-slate-400">Check your internet connection or try again later.</p>
               </div>
             ) : visibleProviders.length > 0 ? (
               <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
