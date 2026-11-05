@@ -6,8 +6,7 @@ import {
   LocateFixed, LoaderCircle
 } from "lucide-react";
 
-const API_URL = "https://justfix24.onrender.com";
-
+const API_URL = `${import.meta.env.VITE_API_URL}/api/providers`;
 const categories = [
   { name: "Electrician", icon: Zap, color: "bg-amber-100 text-amber-600" },
   { name: "Plumber", icon: Droplets, color: "bg-sky-100 text-sky-600" },
